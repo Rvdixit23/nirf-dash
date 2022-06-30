@@ -1,0 +1,51 @@
+Institute Id,Institute Name,City,State,Score,Rank,TLR,RPC,GO,OI,Perception
+NIRF-MGMT-INF-217,"Indian Institute Of Management, Bangaluru",Bangaluru,Karnataka,93.04,1,96.18,94.05,90.10,86.61,95
+NIRF-MGMT-INF-311,"Indian Institute Of Management, Ahmedabad",Ahmedabad,Gujarat,89.91,2,90.20,91.35,89.73,80.63,99
+NIRF-MGMT-INF-353,"Indian Institute Of Management, Calcutta",Kolkata,West Bengal,87.45,3,82.34,93.38,89.44,79.25,94
+NIRF-MGMT-INF-76,"Indian Institute Of Management, Lucknow-Lucknow",Lucknow,Uttar Pradesh,86.12,4,82.22,88.52,89.37,79.32,96
+NIRF-MGMT-INF-352,"Indian Institute Of Management, Udaipur",Udaipur,Rajasthan,84.22,5,80.99,90.85,87.17,68.44,93
+NIRF-MGMT-INF-297,"Indian Institute Of Management, Kozhikode",Kozhikode,Kerala,81.97,6,74.62,88.81,87.15,69.60,94
+NIRF-MGMT-1-2454726101,International Management Institute-New Delhi,NEW DELHI,Delhi,81.77,7,88.45,83.15,83.77,59.33,88
+NIRF-MGMT-1-2451110408,Indian Institute Of Forest Management,BHOPAL,Madhya Pradesh,81.01,8,91.25,78.24,81.39,65.29,82
+NIRF-MGMT-INF-228,"Indian Institute Of Technology, Kanpur",Kanpur,Uttar Pradesh,79.43,9,93.89,92.42,80.81,47.04,44
+NIRF-MGMT-INF-231,"Indian Institute Of Management, Indore-Indore",Indore,Madhya Pradesh,78.62,10,69.39,83.90,87.02,66.80,96
+NIRF-MGMT-1-2455701358,Management Development Institute,GURGAON,Haryana,77.44,11,70.84,75.01,98.59,61.63,97
+NIRF-MGMT-1-2451326855,"International Management Institute, Kolkata",KOLKATA,West Bengal,77.16,12,88.58,85.74,85.53,55.39,37
+NIRF-MGMT-1-2451299852,Xavier Labour Relations Institute (Xlri),JAMSHEDPUR,Jharkhand,75.30,13,84.21,65.44,89.01,52.37,92
+NIRF-MGMT-INF-351,"Indian Institute Of Management, Tiruchirappalli",Tiruchirappalli,Tamil Nadu,75.23,14,76.93,84.11,86.31,64.31,43
+NIRF-MGMT-1-2454400380,Thiagarajar School Of Management,MADURAI,Tamil Nadu,74.68,15,87.77,78.97,82.85,62.21,29
+NIRF-MGMT-1-2450707313,S. P. Jain Institute Of Management & Research,MUMBAI,Maharashtra,74.59,16,69.18,83.93,89.61,41.73,90
+NIRF-MGMT-768,Vellore Institute Of Technology,Vellore,Tamil Nadu ,73.00,17,80.40,77.31,57.24,86.04,42
+NIRF-MGMT-INF-348,"Indian Institute Of Management, Raipur",Raipur,Chhattisgarh,72.41,18,69.09,85.61,87.49,59.44,40
+NIRF-MGMT-INF-350,"Indian Institute Of Management, Rohtak",Rohtak,Haryana,72.37,19,77.54,82.24,85.74,48.52,43
+NIRF-MGMT-INF-355,Rajiv Gandhi Indian Institute Of Management,Shillong,Meghalaya,71.93,20,87.71,80.91,87.66,37.82,25
+NIRF-MGMT-INF-347,"Indian Institute Of Management, Kashipur",Kashipur,Uttarakhand,70.11,21,62.91,78.33,77.72,48.14,89
+NIRF-MGMT-246,Indian Institute Of Information Technology And Management,Gwalior,Madhya Pradesh ,69.42,22,68.12,80.59,55.96,55.03,82
+NIRF-MGMT-1-2454188397,Fore School Of Management-New Delhi,NEW DELHI,Delhi,68.32,23,76.87,69.92,76.70,41.26,66
+NIRF-MGMT-1-2454048264,"Lal Bahadur Shastri Institute Of Managemenet, Delhi",DELHI,Delhi,68.18,24,79.51,75.34,86.44,40.41,27
+NIRF-MGMT-1-2451694143,Birla Institute Of Technology,RANCHI,Jharkhand,67.66,25,74.76,77.67,77.79,40.22,42
+NIRF-MGMT-1-2455080664,"Jaipuria Institute Of Management, Noida-Noida",NOIDA,Uttar Pradesh,67.51,26,75.70,69.59,82.23,58.61,28
+NIRF-MGMT-1-2452712334,Department Of Business Administration - Tezpur University,TEZPUR,Assam,66.41,27,90.06,63.12,62.46,57.10,25
+NIRF-MGMT-INF-349,"Indian Institute Of Management, Ranchi",Ranchi,Jharkhand,65.75,28,52.68,80.73,83.65,58.32,44
+NIRF-MGMT-512,"Institute Of Management, Nirma University",Ahmedabad,Gujarat ,65.72,29,69.07,64.83,61.15,49.25,90
+NIRF-MGMT-1-2455815869,Xavier Institute Of Management & Entrepreneurship,BANGALORE,Karnataka,64.30,30,66.37,69.36,80.43,54.83,33
+NIRF-MGMT-1-2451664315,Great Lakes Institute Of Management,MANAMAI VILLAGE,Tamil Nadu,63.51,31,66.01,83.13,44.74,55.56,37
+NIRF-MGMT-1-2451156700,Itm University,GWALIOR,Madhya Pradesh,62.33,32,50.65,86.35,60.96,63.73,25
+NIRF-MGMT-1-2454344014,Ssn School Of Management,KALAVAKKAM,Tamil Nadu,61.76,33,63.91,70.17,62.70,58.88,33
+NIRF-MGMT-1-2456179118,Department Of Management Studies,TIRUCHIRAPPALLI,Tamil Nadu,60.65,34,46.38,76.39,76.72,59.03,35
+NIRF-MGMT-1-2450590646,Army Institute Of Management & Technology,GREATER NOIDA,Uttar Pradesh,60.48,35,62.85,62.31,75.18,38.86,58
+NIRF-MGMT-1-2451216613,Rajagiri College Of Social Sciences,COCHIN,Kerala,60.47,36,56.16,80.54,78.47,39.27,18
+NIRF-MGMT-1-2451335934,Rajagiri Business School,COCHIN,Kerala,59.82,37,62.86,74.93,82.42,35.04,9
+NIRF-MGMT-1-2450648844,Institute Of Public Enterprise-Hyderabad,HYDERABAD,Telangana,58.96,38,49.53,73.84,74.14,57.79,22
+NIRF-MGMT-1-2453420349,"Institute Of Management Technology, Nagpur",DORLI,Maharashtra,58.85,39,63.17,55.69,78.68,47.73,42
+NIRF-MGMT-380,Lingaya's University,Faridabad,Haryana ,58.38,40,89.47,24.84,70.56,84.29,9
+NIRF-MGMT-1-2456228043,Sri Krishna College Of Engineering And Technology-Coimbatore,COIMBATORE,Tamil Nadu,57.77,41,61.22,62.08,49.65,74.48,22
+NIRF-MGMT-1-2449926375,Adhiyamaan College Of Engineering (Mba Programme),HOSUR,Tamil Nadu,56.44,42,51.53,50.01,71.83,74.28,41
+NIRF-MGMT-1-2454753072,Jagan Institute Of Management Studies Technical Campus,DELHI,Delhi,55.60,43,57.09,67.37,42.77,54.80,36
+NIRF-MGMT-1-2455095630,B.N. College Of Engineering & Technology(Bncet),LUCKNOW,Uttar Pradesh,55.52,44,65.74,61.85,38.76,50.21,39
+NIRF-MGMT-1-2451259979,Entrepreneurship Development Institute Of India,BHAT,Gujarat,54.69,45,59.86,73.95,31.34,46.32,29
+NIRF-MGMT-1-2452540136,Institute Of Management & Entrepreneurship Development-Pune,PUNE,Maharashtra,54.04,46,61.97,31.11,69.21,71.80,50
+NIRF-MGMT-1-2449925164,Rvs Technical Campus,COIMBATORE,Tamil Nadu,53.95,47,56.99,70.10,27.35,72.38,9
+NIRF-MGMT-INF-NEW13,University School Of Management,Kurushetra,Haryana ,53.33,48,39.18,66.16,69.17,66.36,14
+NIRF-MGMT-1-2453263517,"Jaipuria Isntitute Of Management, Lucknow-Lucknow",LUCKNOW,Uttar Pradesh,52.85,49,73.41,26.61,79.74,53.24,29
+NIRF-MGMT-1-2455861012,Scms School Of Technology & Management (Mba)-Cochin,COCHIN,Kerala,52.13,50,58.10,44.33,71.02,62.36,14

@@ -1,0 +1,101 @@
+Institute Id,Institute Name,City,State,Score,Rank,TLR,RPC,GO,OI,Perception
+NIRF-UNIV-248,Indian Institute Of Science Bangalore,Bangalore,Karnataka ,91.81,1,94.45,96.12,100.0,67.18,100
+NIRF-UNIV-282,Institute Of Chemical Technology,Mumbai,Maharashtra ,87.58,2,84.53,96.51,94.00,61.66,97
+NIRF-UNIV-319,Jawaharlal Nehru University,New Delhi,Delhi,86.45,3,89.45,84.33,100.0,73.57,98
+NIRF-UNIV-745,University Of Hyderabad-Hyderabad,Hyderabad,Telangana,85.45,4,74.49,89.22,86.71,88.83,98
+NIRF-UNIV-708,Tezpur University,Tezpur,Assam ,84.31,5,83.81,86.64,87.15,76.76,86
+NIRF-UNIV-741,University Of Delhi,Delhi,Delhi,83.19,6,68.54,88.86,98.14,82.80,98
+NIRF-UNIV-66,Banaras Hindu University,Varanasi,Uttar Pradesh ,81.22,7,70.28,81.11,92.60,87.75,99
+NIRF-UNIV-249,Indian Institute Of Space Science And Technology,Thiruvananthapuram,Kerala ,78.82,8,94.28,63.58,100.0,70.83,95
+NIRF-UNIV-86,Birla Institute Of Technology & Science -Pilani,Pilani,Rajasthan,76.85,9,86.74,76.72,100.0,36.80,96
+NIRF-UNIV-18,Aligarh Muslim University,Aligarh,Uttar Pradesh ,76.62,10,66.73,84.81,84.96,65.23,86
+NIRF-UNIV-780,Visva Bharati,Kolkata,West Bengal ,76.11,11,61.85,79.29,100.0,78.89,90
+NIRF-UNIV-558,Punjab University,Chandigarh,Chandigarh ,76.02,12,56.18,84.89,81.93,76.32,97
+NIRF-UNIV-542,Pondicherry University,Puducherry,Pondicherry,74.44,13,70.64,79.93,97.60,56.05,80
+NIRF-UNIV-76,Bharathiar University,Coimbatore,Tamil Nadu ,74.31,14,55.11,80.70,100.0,79.05,86
+NIRF-UNIV-29,Amrita Vishwa Vidyapeetham-Coimbatore,Coimbatore,Tamil Nadu ,74.02,14A,74.39,69.03,100.0,74.02,80
+NIRF-UNIV-519,North Eastern Hill University,Shillong,Meghalaya ,72.41,15,80.40,58.31,100.0,71.80,92
+NIRF-UNIV-360,King Georges Medical University-Lucknow,Lucknow,Uttar Pradesh ,72.24,16,78.12,66.52,87.18,65.64,80
+NIRF-UNIV-624,Shiksha 'O' Anusandhan,Bhuabaneswar,Odisha,72.25,16A,80.69,57.01,100.0,81.71,80
+NIRF-UNIV-231,Homi Bhabha National Institute,Mumbai,Maharashtra ,72.06,17,96.43,46.76,100.0,65.76,96
+NIRF-UNIV-309,Jamia Hamdard-New Delhi,New Delhi,Delhi,71.44,18,85.66,83.52,100.0,48.95,0
+NIRF-UNIV-199,Goa University-Goa,Goa,Goa ,69.90,20,63.29,70.81,100.0,74.61,64
+NIRF-UNIV-215,Guru Gobind Singh Indraprastha Vishwavidyalaya,New Delhi,Delhi,69.65,21,71.48,67.84,80.60,70.98,64
+NIRF-UNIV-194,Gauhati University,Guwahati,Assam ,68.58,22,63.04,66.51,100.0,77.74,64
+NIRF-UNIV-287,International  Institute Of Information Technology Hyderabad,Hyderabad,Telangana,68.38,23,67.71,65.31,100.0,59.67,80
+NIRF-UNIV-216,Guru Jambeshwar University Of Science And Technology,Hissar,Haryana ,67.46,24,74.89,75.84,96.21,65.64,0
+NIRF-UNIV-218,Guru Nanak Dev University,Amritsar,Punjab ,67.32,25,42.91,76.58,100.0,64.08,92
+NIRF-UNIV-283,Institute Of Liver And Biliary Sciences,New Delhi,Delhi,66.65,27,86.77,67.87,0.000,36.55,80
+NIRF-UNIV-626,Shivaji University,Kolhapur,Maharashtra ,66.53,28,36.00,80.24,93.95,66.21,90
+NIRF-UNIV-67,Banasthali Vidyapith,Banasthali,Rajasthan,66.37,29,65.96,50.68,100.0,84.45,86
+NIRF-UNIV-137,Cochin Unviersity Of Science & Technology,Cochin,Kerala ,66.35,30,54.60,68.19,87.91,60.64,92
+NIRF-UNIV-81,Bidhan Chandra Krishi Vishwavidyalaya,Mohanpur,West Bengal ,66.33,31,94.15,41.84,98.47,56.28,80
+NIRF-UNIV-434,Manipal Academy Of Higher Education-Manipal,Manipal,Karnataka ,65.74,32,57.19,61.60,94.55,65.23,94
+NIRF-UNIV-529,Osmania University,Hyderabad,Telangana,65.40,33,50.43,63.75,100.0,74.25,86
+NIRF-UNIV-111,Central University Of Rajasthan,Bandar Sindri,Rajasthan,64.49,34,83.76,41.13,100.0,76.74,64
+NIRF-UNIV-299,Jagadguru Sri Shivarathreeshwara University,Mysore,Karnataka ,64.28,35,74.91,65.35,80.10,77.77,0
+NIRF-UNIV-697,Tamilnadu Veterinary & Animal Sciences University,Chennai,Tamil Nadu ,64.23,36,91.37,34.40,94.41,79.59,64
+NIRF-UNIV-324,Jaypee University Of Information Technology-Solan,Solan,Himachal Pradesh ,64.21,37,69.49,73.01,100.0,61.08,0
+NIRF-UNIV-285,Instituteof Armamrnt Technology,Pune,Maharashtra ,64.05,38,61.83,63.31,100.0,47.93,80
+NIRF-UNIV-172,Dr. Harisingh Gour Vishwavidyalaya-Sagar,Sagar,Madhya Pradesh ,63.69,39,67.45,70.03,0.000,60.32,64
+NIRF-UNIV-692,Tamilnadu Agricultural University,Coimbatore,Tamil Nadu ,63.66,40,79.89,39.55,99.30,65.97,90
+NIRF-UNIV-550,Presidency University,Kolkata,West Bengal ,63.56,41,68.93,57.32,100.0,38.37,92
+NIRF-UNIV-661,Sri Ramachandra Medical College And Research Institute,Chennai,Tamil Nadu ,62.53,41A,82.74,63.32,92.26,51.81,0
+NIRF-UNIV-615,Sathyabama Institute Of Science And Technology,Chennai,Tamil Nadu ,62.46,42,79.83,53.27,100.0,81.37,0
+NIRF-UNIV-596,S.R.M Institute Of Science And Technology,Chennai,Tamil Nadu ,62.29,43,64.79,62.32,100.0,86.19,0
+NIRF-UNIV-409,Maharishi Dayanand University,Rohtak,Haryana ,61.31,44,60.04,66.51,100.0,77.95,0
+NIRF-UNIV-338,Kalyani University,Kalyani,West Bengal ,61.30,45,50.02,69.60,0.000,59.83,95
+NIRF-UNIV-554,Pt.Ravishankar Shukla University,Raipur,Chhattisgarh,61.09,46,58.26,54.38,100.0,69.77,64
+NIRF-UNIV-540,Periyar University,Salem,Tamil Nadu ,60.99,47,55.12,73.46,95.21,68.76,0
+NIRF-UNIV-350,Karunya Institute Of Technology And Sciences-Coimbatore,Coimbatore,Tamil Nadu ,60.85,48,64.37,60.99,100.0,80.94,0
+NIRF-UNIV-15,Alagappa University,Karaikudi,Tamil Nadu ,60.63,49,35.42,71.36,100.0,67.08,64
+NIRF-UNIV-467,"National Institute Of Food Technology, Entrepreneurship & Management (Niftem)",Sonepat,Haryana ,60.44,50,81.47,32.93,100.0,76.19,64
+NIRF-UNIV-448,Mizoram University,Aizwal,Mizoram ,60.31,51,76.95,52.87,100.0,73.89,0
+NIRF-UNIV-335,Kalasalingam Academy Of Research And Higher Education,Srivilliputtur,Tamil Nadu ,60.27,52,82.53,48.96,100.0,72.87,0
+NIRF-UNIV-336,Kalinga Institute Of Industrial Technology,Bhubneshwar,Odisha,60.09,53,76.05,54.24,100.0,70.55,0
+NIRF-UNIV-557,Punjab Technical University,Kapurthala,Punjab ,60.06,54,75.61,66.04,96.38,40.98,0
+NIRF-UNIV-534,Pandit Deendayal Petroleum University,Gandhinagar,Gujarat ,58.67,55,57.50,49.76,100.0,56.86,80
+NIRF-UNIV-276,Indraprastha Institute Of Information Technology-New Delhi,New Delhi,Delhi,58.62,56,72.48,58.74,100.0,55.87,0
+NIRF-UNIV-33,Annamalai University,Annamalainagar,Tamil Nadu ,57.58,57,44.44,61.93,79.99,49.91,80
+NIRF-UNIV-521,North Maharashtra University,Umavinagar,Maharashtra ,57.28,59,53.53,70.22,83.40,59.76,0
+NIRF-UNIV-101,Central University Of Gujarat,Gandhinagar,Gujarat ,57.14,60,62.95,46.07,36.87,77.24,64
+NIRF-UNIV-644,Sikkim University,Gangtok,Sikkim ,57.08,61,62.69,59.74,97.71,63.26,0
+NIRF-UNIV-732,U.P. Pandit Deen Dayal Upadhyaya Pashu Chikitsa Vigyan Vishwavidhyalaya Evam Go,Mathura,Uttar Pradesh ,56.84,62,84.33,55.14,0.000,20.57,64
+NIRF-UNIV-668,Sri Venkateswara University,Tirupati,Andhra Pradesh,55.93,63,46.08,80.18,0.000,66.93,0
+NIRF-UNIV-311,Jammu University -Jammu Tawi,Jammu Tawi ,Jammu and Kashmir ,55.70,64,69.44,75.15,5.685,30.16,0
+NIRF-UNIV-110,Central University Of Punjab-Bathinda,Bathinda,Punjab ,55.62,65,68.12,41.49,53.47,52.87,80
+NIRF-UNIV-629,Shoolini University Of Biotechnology And Management Sciences-Solan,Solan,Himachal Pradesh ,55.49,66,60.46,56.43,100.0,65.23,0
+NIRF-UNIV-113,Central University Of Tamil Nadu-Tiruvarur,Tiruvarur,Tamil Nadu ,55.37,67,49.02,52.62,57.31,69.04,64
+NIRF-UNIV-740,University Of Allahabad,Allahabad,Uttar Pradesh ,55.04,68,33.16,60.55,32.64,70.69,86
+NIRF-UNIV-317,Jawaharlal Nehru Technological University,Kakinada,Andhra Pradesh,54.71,69,60.95,46.94,42.57,60.83,64
+NIRF-UNIV-707,Teri School Of Advanced Studies,New Delhi,Delhi,54.46,70,46.93,65.96,78.24,67.27,0
+NIRF-UNIV-497,National Law University,New Delhi,Delhi,54.17,71,74.82,22.00,100.0,58.19,92
+NIRF-UNIV-462,Narsee Monjee Institute Of Management Studies -Mumbai,Mumbai,Maharashtra ,54.04,72,56.18,34.16,100.0,63.42,90
+NIRF-UNIV-210,Gujarat University,Ahmedabad,Gujarat ,54.01,73,29.23,59.60,100.0,66.70,64
+NIRF-UNIV-159,Dibrugarh University,Dibrugarh,Assam ,53.89,74,57.25,55.90,86.86,66.77,0
+NIRF-UNIV-516,Noorul Islam Centre For Higher Education -Kanyakumari,Kanyakumari,Tamil Nadu ,53.42,75,71.60,40.13,100.0,72.56,0
+NIRF-UNIV-405,Maharaja Sayajirao University Of Baroda -Vadodara,Vadodara,Gujarat ,53.14,76,24.97,59.18,93.77,57.67,86
+NIRF-UNIV-47,Assam University-Silchar,Silchar,Assam ,53.13,77,56.72,53.68,0.000,54.97,64
+NIRF-UNIV-746,University Of Kota,Kota,Rajasthan,52.88,78,50.80,39.93,99.78,68.56,64
+NIRF-UNIV-552,Pt. Bhagwat Dayal Sharma University Of Health Sciences,Rohtak,Haryana ,52.47,79,72.44,48.78,100.0,41.55,0
+NIRF-UNIV-636,Shri Mata Vaishno Devi University,Katra,Jammu and Kashmir ,52.38,80,68.84,63.12,21.75,35.95,0
+NIRF-UNIV-242,Indain Institute Of Foreigen Trade-New Delhi,New Delhi,Delhi,51.82,81,66.86,29.03,100.0,58.36,64
+NIRF-UNIV-721,The Northcap University,Gurgaon,Haryana ,51.63,82,75.36,31.93,100.0,74.98,0
+NIRF-UNIV-310,Jamia Millia Islamia-New Delhi,New Delhi,Delhi,51.51,83,24.13,53.54,100.0,76.40,64
+NIRF-UNIV-62,Babasaheb Bhimrao Ambedkar University-Lucknow,Lucknow,Uttar Pradesh ,51.39,84,48.04,62.39,50.83,63.23,0
+NIRF-UNIV-382,Lnm Istitute Of Information Technology,Jaipur,Rajasthan,50.81,85,52.71,47.19,100.0,31.49,64
+NIRF-UNIV-323,Jaypee University Of Engineering & Technology,Raghogarh,Madhya Pradesh ,50.67,86,56.05,42.80,100.0,35.57,64
+NIRF-UNIV-166,Dr. Babasaheb Ambedkar Marathwada University,Aurangabad,Maharashtra ,50.07,87,46.40,49.21,100.0,76.44,0
+NIRF-UNIV-730,Tripura University,Agartala,Tripura ,49.89,88,55.30,37.32,72.82,55.54,64
+NIRF-UNIV-470,National Institute Of Technology Agartala,Agratala,Tripura ,49.73,89,51.12,50.15,90.29,65.44,0
+NIRF-UNIV-389,M.S. Ramaiah University Of Applied Sciences,Bangalore,Karnataka ,49.67,90,41.07,55.72,0.000,57.73,64
+NIRF-UNIV-146,Dayalbagh Educational Institute  -Agra,Agra,Uttar Pradesh ,49.64,91,49.49,42.69,100.0,84.76,0
+NIRF-UNIV-792,Yogi Vemana University,Kadapa,Andhra Pradesh,49.11,92,50.90,50.06,100.0,58.82,0
+NIRF-UNIV-653,Sri Balaji Vidyapeeth Mahatma Gandhi Medical College Campus,Puducherry,Pondicherry,48.89,93,77.89,38.70,0.000,67.00,0
+NIRF-UNIV-112,Central University Of South Bihar,Patna,Bihar ,48.89,94,76.46,42.79,36.20,46.84,0
+NIRF-UNIV-646,Sir Padmapat Singhania University,Udaipur,Rajasthan,48.20,95,71.84,31.23,100.0,61.07,0
+NIRF-UNIV-21,Ambedkar University Delhi (Aud),Delhi,Delhi,47.83,96,63.29,24.19,72.24,61.07,64
+NIRF-UNIV-573,Rajasthan University Of Veterinary & Animal Sciences,Bikaner,Rajasthan,47.65,97,89.63,28.30,0.000,62.94,0
+NIRF-UNIV-541,Pes University,Bangalore,Karnataka ,47.30,98,49.98,48.73,0.000,42.80,64
+NIRF-UNIV-265,Indian Law Institute -New Delhi,New Delhi,Delhi,47.19,99,67.43,20.49,97.70,49.86,64
+NIRF-UNIV-126,Chettinad Academy Of Research And Education  (Care),Chennai,Tamil Nadu ,47.05,100,67.09,33.23,100.0,57.58,0
