@@ -29,9 +29,7 @@ app = Dash(__name__)
 # App layout
 
 college_df = pd.read_csv("sample_data.csv")
-college_df = college_df.drop(
-    ["Institute Id", "TLR", "RPC", "GO", "OI", "Perception"], axis=1
-)
+college_df = college_df.drop(["Institute Id"], axis=1)
 college_table = dash_table.DataTable(
     id="college_rankings_with_custom_weight",
     data=college_df.to_dict("records"),
@@ -70,7 +68,7 @@ ranking_criteria = [
 ]
 
 global old_values
-old_values = [30, 30, 20, 10, 10]
+old_values = [90, 90, 60, 30, 30]
 
 sliders = [
     [
@@ -93,15 +91,51 @@ reset_button = html.Button(
 app.layout = html.Div(
     [
         html.Div(
-            dcc.Markdown(
-                """
+            [
+                dcc.Markdown(
+                    """
                     ### **2021 Engineering NIRF Rankings, but YOU decide criteria weights**
-                    #### **Please Note** *To understand the scores and how they are computed, please refer to the NIRF website [here](https://www.nirfindia.org/nirfpdfcdn/2021/framework/Engineering.pdf).* Metrics used for NIRF rankings are designed to be easily verifiable.
+                    #### **Please Note** ***To understand the scores and how they are computed, please refer to the NIRF website [here](https://www.nirfindia.org/nirfpdfcdn/2021/framework/Engineering.pdf).*** Metrics used for NIRF rankings are designed to be easily verifiable.
                     ###### For example, a high teacher to student ratio doesn't really mean the teachers are good. **Here are a list of metrics completely ignored by NIRF criteria which might matter to you.**
                     ###### Quality of teaching (different from qualification of teaching), Campus, Hostel, How good/safe the city is, Food, Fees and Cost of living, College activity clubs, Annual Fests, Peer Crowd.
                     ###### Watch my YouTube video to learn more about NIRF [here (Video not up yet)](https://www.youtube.com/channel/UCq5cUH_k3Y2u_rnUeF6zbDg/).
                 """,
-            ),
+                ),
+                # dcc.Markdown(
+                #     """
+                #     ### Criteria Explained!
+                #     ###### Teaching, Learning & Resources (TLR)
+                #     - Student Strength including Doctoral Students(SS): 20 marks
+                #     - Faculty-student ratio with emphasis on permanent faculty (FSR): 30
+                #     marks
+                #     - Combined metric for Faculty with PhD (or equivalent) and
+                #     Experience (FQE): 20 marks
+                #     - Financial Resources and their Utilisation (FRU): 30 marks
+                #     ###### Research and Professional Practice (RP)
+                #     - Combined metric for Publications (PU): 35 marks
+                #     - Combined metric for Quality of Publications (QP): 40 marks
+                #     - IPR and Patents: Published and Granted (IPR): 15 marks
+                #     - Footprint of Projects and Professional Practice (FPPP): 10 marks
+                #     ###### Graduation Outcomes (GO)
+                #     - Combined metric for Placement and Higher Studies (GPH): 40 marks
+                #     - Metric for University Examinations (GUE): 15 marks
+                #     - Median Salary (GMS): 25 marks
+                #     - Metric for Number of Ph.D. Students Graduated (GPHD): 20 marks
+                #     ###### Outreach and Inclusivity (OI)
+                #     - Percentage of Students from other States/Countries (Region Diversity
+                #     RD): 30 marks
+                #     - Percentage of Women (Women Diversity WD): 30 marks
+                #     - Economically and Socially Challenged Students (ESCS): 20 marks
+                #     - Facilities for Physically Challenged Students (PCS): 20 marks
+                #     ###### Perception (PR)
+                #     - Peer Perception: Employers & Academic Peer (PR): 100 marks
+                # """
+                # ),
+            ],
+            style={
+                "display": "flex",
+                "flex-direction": "row",
+            },
         ),
         html.Div(
             [
@@ -132,7 +166,7 @@ app.layout = html.Div(
         ),
     ],
     # table and sliders below the text
-    style={"display": "flex", "flex-direction": "column"},
+    style={"display": "flex", "flex-direction": "column-reverse"},
 )
 
 
@@ -143,35 +177,16 @@ app.layout = html.Div(
         Output(component_id=criteria, component_property="value")
         for criteria in ranking_criteria
     ],
-    [Input(component_id="reset_values", component_property="n_clicks")]
-    + [
-        Input(component_id=criteria, component_property="value")
-        for criteria in ranking_criteria
-    ],
+    [Input(component_id="reset_values", component_property="n_clicks")],
     prevent_initial_call=True,
 )
-def ensure_sum(reset_id, *values):
+def ensure_sum(reset_id):
     callback_trigger = callback_context
     global old_values
     trigger_id = callback_trigger.triggered[0]["prop_id"].split(".")[0]
     if trigger_id == "reset_values":
-        old_values = [30, 30, 20, 10, 10]
-        return [30, 30, 20, 10, 10]
-    results = [None for _ in values]
-    for index, slider in enumerate(values):
-        if slider != old_values[index]:
-            total_left = 100 - slider
-            old_val_before_change = old_values[index]
-            results[index] = slider
-    if old_val_before_change == 100:
-        results = [total_left / 4 if not res else 100 - total_left for res in results]
-    if filter(lambda x: x is not None, results):
-        for index, old_val in enumerate(old_values):
-            if results[index] == None:
-                # print(f"({old_val}/(100 - {old_val_before_change}))*{total_left}")
-                results[index] = (old_val / (100 - old_val_before_change)) * total_left
-    old_values = [result for result in results]
-    return results
+        old_values = [90, 90, 60, 30, 30]
+        return [90, 90, 60, 30, 30]
 
 
 @app.callback(
@@ -192,14 +207,15 @@ def ensure_sum(reset_id, *values):
 )
 def weight_tables(sort_by, *weights):
     criteria_short = ["TLR", "RPC", "GO", "OI", "Perception"]
+    total = sum(weights)
     new_df = college_df
     new_df["Score"] = 0
     for criteria, weight in zip(criteria_short, weights):
-        new_df["Score"] += (weight / 100) * new_df[criteria]
+        new_df["Score"] += (weight / total) * new_df[criteria]
     new_df["Score"].round(2)
     new_df.sort_values(by="Score", ascending=False, inplace=True)
     new_df["Rank"] = np.arange(len(new_df)) + 1
-    print(new_df.head())
+    # print(new_df.head())
     return new_df.to_dict("records")
 
 

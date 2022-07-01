@@ -419,7 +419,7 @@ there.
   position: relative;
   height: 14px;
   /* padding: 5px 0; */
-  width: 50%
+  width: 100%;
   border-radius: 6px;
   touch-action: none;
   box-sizing: border-box;
@@ -492,20 +492,4 @@ there.
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
   vertical-align: middle;
-}
-
-@media only screen and (max-width: 800px) {
-  #info_text {
-    width: 390px;
-  }
-  #input_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  #info_input_container {
-    display: flex;
-    flex-direction: column;
-    background-color:aqua;
-  }
 }
