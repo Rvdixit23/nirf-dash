@@ -17,6 +17,7 @@ from dash import (
 
 
 app = Dash(__name__)
+server = app.server
 
 # -- Import and clean data (importing csv into pandas)
 # df = pd.read_csv("IndianUniversityRankingFrom2017to2021.csv")
