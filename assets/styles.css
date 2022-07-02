@@ -164,7 +164,7 @@ color: #0FA0CE; }
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.button {
+button {
   border-radius: 8px;
   background-color: #5ca1e1;
   border: none;
@@ -174,18 +174,20 @@ color: #0FA0CE; }
   padding: 16px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 36px;
+  margin: 15px;
+  height: 5%;
+  width: 20%;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
 }
 
-.button{
+button{
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button:after {
+button:after {
   position: absolute;
   opacity: 0;  
   top: 14px;
@@ -193,12 +195,12 @@ color: #0FA0CE; }
   transition: 0.5s;
 }
 
-.button:hover{
+button:hover{
   padding-right: 24px;
   padding-left:8px;
 }
 
-.button:hover:after {
+button:hover:after {
   opacity: 1;
   right: 10px;
 }
@@ -424,6 +426,11 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+#ranking_dash{
+  display: flex;
+  flex-direction: column;
+}
 
 .rc-slider {
   position: relative;

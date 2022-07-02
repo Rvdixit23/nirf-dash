@@ -1,6 +1,3 @@
-from functools import reduce
-import itertools
-from typing import List
 import pandas as pd
 import numpy as np
 import plotly.express as px  # (version 4.7.0 or higher)
@@ -19,48 +16,22 @@ from dash import (
 app = Dash(__name__)
 server = app.server
 
-
-criteria_breakdown = dcc.Markdown(
-            """
-            ### Criteria Explained!
-            ###### Teaching, Learning & Resources (TLR)
-            - Student Strength including Doctoral Students(SS): 20 marks
-            - Faculty-student ratio with emphasis on permanent faculty (FSR): 30
-            marks
-            - Combined metric for Faculty with PhD (or equivalent) and
-            Experience (FQE): 20 marks
-            - Financial Resources and their Utilisation (FRU): 30 marks
-            ###### Research and Professional Practice (RP)
-            - Combined metric for Publications (PU): 35 marks
-            - Combined metric for Quality of Publications (QP): 40 marks
-            - IPR and Patents: Published and Granted (IPR): 15 marks
-            - Footprint of Projects and Professional Practice (FPPP): 10 marks
-            ###### Graduation Outcomes (GO)
-            - Combined metric for Placement and Higher Studies (GPH): 40 marks
-            - Metric for University Examinations (GUE): 15 marks
-            - Median Salary (GMS): 25 marks
-            - Metric for Number of Ph.D. Students Graduated (GPHD): 20 marks
-            ###### Outreach and Inclusivity (OI)
-            - Percentage of Students from other States/Countries (Region Diversity
-            RD): 30 marks
-            - Percentage of Women (Women Diversity WD): 30 marks
-            - Economically and Socially Challenged Students (ESCS): 20 marks
-            - Facilities for Physically Challenged Students (PCS): 20 marks
-            ###### Perception (PR)
-            - Peer Perception: Employers & Academic Peer (PR): 100 marks
-        """
-        )
-
-# -- Import and clean data (importing csv into pandas)
-# df = pd.read_csv("IndianUniversityRankingFrom2017to2021.csv")
-# df = df.pivot(index = ["Institute ID", "Name"], columns="Year", values="Rank")
-# df = df.groupby(["Institute ID", "Name"])[["Rank"]].transform("Year")
-# df.reset_index(inplace=True)
-# print(df)
-
 # ------------------------------------------------------------------------------
-# App layout
+# App components
 
+# Criteria breakdown
+with open("docs/criteria.md", "r") as criteriaFile:
+    criteria_breakdown = dcc.Markdown(criteriaFile.read())
+
+# Introduction text
+with open("docs/intro.md", "r") as introFile:
+    intro = dcc.Markdown(introFile.read())
+
+# Usage Instructions
+with open("docs/usage.md", "r") as usageFile:
+    usage = dcc.Markdown(usageFile.read())
+
+# College Tables
 college_df = pd.read_csv("sample_data.csv")
 college_df = college_df.drop(["Institute Id"], axis=1)
 college_table = dash_table.DataTable(
@@ -117,23 +88,28 @@ sliders = [
     for criteria, default_value in zip(ranking_criteria, old_values)
 ]
 
+tagged_sliders = [element for criteria in sliders for element in criteria]
+
 reset_button = html.Button(
     "Reset", id="reset_values", n_clicks=0, className="setbutton"
 )
+
+toggle_iits_button = html.Button(
+    "Toggle IITs", id="toggle_iits", n_clicks=0, className="setbutton"
+)
+
+toggle_nits_button = html.Button(
+    "Toggle NITs", id="toggle_nits", n_clicks=0, className="setbutton"
+)
+
+# ------------------------------------------------------------------------------
+# App layout
 
 app.layout = html.Div(
     [
         html.Div(
             [
-                dcc.Markdown(
-                    """
-                    ### **2021 Engineering NIRF Rankings, but YOU decide criteria weights**
-                    #### **Please Note** ***To understand the scores and how they are computed, please refer to the NIRF website [here](https://www.nirfindia.org/nirfpdfcdn/2021/framework/Engineering.pdf).*** Metrics used for NIRF rankings are designed to be easily verifiable.
-                    ###### For example, a high teacher to student ratio doesn't really mean the teachers are good. **Here are a list of metrics completely ignored by NIRF criteria which might matter to you.**
-                    ###### Quality of teaching (different from qualification of teaching), Campus, Hostel, How good/safe the city is, Food, Fees and Cost of living, College activity clubs, Annual Fests, Peer Crowd.
-                    ###### Watch my YouTube video to learn more about NIRF [here (Video not up yet)](https://www.youtube.com/channel/UCq5cUH_k3Y2u_rnUeF6zbDg/).
-                """,
-                ),
+                usage,
             ],
             id="intro_text",
         ),
@@ -142,7 +118,7 @@ app.layout = html.Div(
                 html.Div(
                     [
                         html.Div(
-                            [element for criteria in sliders for element in criteria],
+                            tagged_sliders,
                             id='sliders',
                         ),
                         html.Div(
@@ -152,9 +128,11 @@ app.layout = html.Div(
                     ],
                     id="slider_table_container",
                 ),
-                html.Div(reset_button),
+                html.Div([reset_button]),
             ],
+            id="ranking_dash"
         ),
+        intro,
         criteria_breakdown,
     ],
     # table and sliders below the text,
@@ -162,7 +140,7 @@ app.layout = html.Div(
 
 
 # ------------------------------------------------------------------------------
-# Connect the Plotly graphs with Dash Components
+# Interactive functionality
 @app.callback(
     [
         Output(component_id=criteria, component_property="value")
@@ -188,7 +166,7 @@ def ensure_sum(reset_id):
         Input(
             component_id="college_rankings_with_custom_weight",
             component_property="sort_by",
-        )
+        ),
     ]
     + [
         Input(component_id=criteria, component_property="value")
